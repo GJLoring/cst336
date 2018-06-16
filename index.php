@@ -7,5 +7,9 @@
 echo "Gabriel Loring's CST336 Internet Programming Page";
 
 ?>
+<br/>
+<br/>
+<h1> Labs </h1>
+<a href="labs/lab1/"> Lab 1</a>
 </body>
 </html>
