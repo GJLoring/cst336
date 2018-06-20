@@ -12,8 +12,6 @@ echo "Gabriel Loring's CST336 Internet Programming Page";
 <h1> Labs </h1>
 <a href="labs/lab1/"> Lab 1</a>
 
-<a href="labs/lab2/"> Lab 2</a>
-
 <br/>
 <h1> Homework </h1>
 <a href="hw/hw1/"> Homework 1</a>
