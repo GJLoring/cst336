@@ -1,0 +1,8 @@
+[25-Jun-2018 09:47:44 UTC] PHP Parse error:  syntax error, unexpected 'img' (T_STRING), expecting ',' or ';' in /home/ubuntu/workspace/cst336/labs/lab2/index.php on line 25
+[25-Jun-2018 09:48:27 UTC] PHP Parse error:  syntax error, unexpected 'img' (T_STRING), expecting ',' or ';' in /home/ubuntu/workspace/cst336/labs/lab2/index.php on line 25
+[25-Jun-2018 10:21:21 UTC] PHP Parse error:  syntax error, unexpected '{' in /home/ubuntu/workspace/cst336/labs/lab2/inc/functions.php on line 8
+[25-Jun-2018 10:21:21 UTC] PHP Stack trace:
+[25-Jun-2018 10:21:21 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/labs/lab2/index.php:0
+[25-Jun-2018 10:21:42 UTC] PHP Parse error:  syntax error, unexpected '{' in /home/ubuntu/workspace/cst336/labs/lab2/inc/functions.php on line 8
+[25-Jun-2018 10:21:42 UTC] PHP Stack trace:
+[25-Jun-2018 10:21:42 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/labs/lab2/index.php:0
