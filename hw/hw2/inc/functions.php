@@ -127,14 +127,14 @@
     function includedWith(){
         $fries = description();
         $shake = description();
-        echo "<H2>$fries Fries and the $shake Shake in town!</H2>";
+        echo "<H2>Includes $fries Fries and the $shake Shake in town!</H2>";
     }
 
     function looksLike(){
         $randomValue = rand(0,3);
         $images = array("a","b","c","d");
         $images[$randomValue];
-        echo "<img src='./img/$images[$randomValue].jpeg' alt='It is probally better you can not see this' >";
+        echo "<img src='./img/$images[$randomValue].jpeg' alt='It is probally better you can not see this' class='display' >";
     }
     
 ?>

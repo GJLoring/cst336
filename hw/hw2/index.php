@@ -12,21 +12,25 @@
         </style>
     </head>
     <body>
-        <div id="name">
-            <?php
-                nameSandwich();
-            ?>
-        </div>
-        <div id="image">
-            <?php
-                looksLike();
-            ?>
-        </div>
-         <div id="includes">
-            <?php
-                includedWith();;
-            ?>
-        </div>
+        <div id="plate">
+            <img src='./img/plate.jpeg' alt='Plate' >
+            <div id="name">
+                <?php
+                    nameSandwich();
+                ?>
+                       <?php
+                    looksLike();
+                ?>
+            </div>
+
+
+
+             <div id="includes">
+                <?php
+                    includedWith();;
+                ?>
+            </div>
+        </div> 
     </body>
     <footer>
   <p>Posted by: Gabriel Loring</p>
