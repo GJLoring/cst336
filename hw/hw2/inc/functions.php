@@ -71,7 +71,7 @@
                  break;
             case 1: $c="Fish";
                  break;
-            case 2: $c="Chimi changa";
+            case 2: $c="ChimiChanga";
                  break;
             case 3: $c="Wrap";
                  break;
@@ -79,7 +79,7 @@
                  break;
             case 5: $c="Crunchy Frog";
                  break;
-            case 6: $c="Vegtible";
+            case 6: $c="Vegetable";
                  break;
         }
         return $c;
