@@ -13,7 +13,7 @@
         <script type="text/javascript">
             function play_jackpot() {
                 var soundFile = document.createElement('audio');
-                soundFile.setAttribute('src', '/mp3/jackpot.mp3');
+                soundFile.setAttribute('src', './mp3/jackpot.mp3');
                 soundFile.setAttribute('autoplay', 'autoplay');
                 soundFile.load();
                 soundFile.play();
