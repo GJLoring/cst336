@@ -12,10 +12,24 @@
         </style>
     </head>
     <body>
-        <div id="main">
+        <div id="name">
             <?php
-                nameSandwich();;
+                nameSandwich();
+            ?>
+        </div>
+        <div id="image">
+            <?php
+                looksLike();
+            ?>
+        </div>
+         <div id="includes">
+            <?php
+                includedWith();;
             ?>
         </div>
     </body>
+    <footer>
+  <p>Posted by: Gabriel Loring</p>
+  <p>Food items posted are experimental and should not be eaten by anyone</p>
+</footer>
 </html>

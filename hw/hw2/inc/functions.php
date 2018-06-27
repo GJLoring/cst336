@@ -117,12 +117,23 @@
 
         $fries = description();
         $shake = description();
-        echo "<H1>$a $b $c $d!</H1></br>";
-        echo "<H3>Served with:</H3>";
+        echo "<H1>$a $b $c $d!";
+        for($i=1; $i<4;$i++){
+            echo "!";
+        }
+        echo"</H1></br>";
+    }
+    
+    function includedWith(){
+        $fries = description();
+        $shake = description();
         echo "<H2>$fries Fries and the $shake Shake in town!</H2>";
     }
 
-
-
+    function looksLike(){
+        $fries = description();
+        $shake = description();
+        echo "<H2>$fries Fries and the $shake Shake in town!</H2>";
+    }
     
 ?>
