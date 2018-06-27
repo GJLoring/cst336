@@ -2,33 +2,47 @@
 
     img {
         border-radius:20px;
-        position:center;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 50%;
     }
     
     body {
         background-color: black;
         background-image:url("../img/wall.png");
+        text-align:center;
 
     }
-    
+
     #name {
-        font-family: 'Indie Flower', cursive;;
+        font-family: 'Indie Flower', cursive;
         background-image:url("../img/plate.jpeg");
         width:800px;
         height:571;
         position:relative;
-        margin:0 auto;
+        margin-left: auto;
+        margin-right: auto;
         text-align:center;
-        font-size:1.8em;
+        font-size:1.2em;
     }
     
     #includes {
-        font-family: 'Indie Flower', cursive;;
+        font-family: "Times New Roman", Georgia, Serif;
         position:relative;
-        margin:0 auto;
+        margin-left: auto;
+        margin-right: auto;
         text-align:center;
         font-size:1.0em;
         color:white;
+    }
+    
+    #image {
+        position:relative;
+        margin-left: auto;
+        margin-right: auto;
+        width:125;
+        height: auto;
     }
     
     footer{

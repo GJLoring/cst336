@@ -131,10 +131,10 @@
     }
 
     function looksLike(){
-        $randomValue = rand(0,4);
+        $randomValue = rand(0,3);
         $images = array("a","b","c","d");
         $images[$randomValue];
-        echo "<img src='./img/$images[$randomValue].jpeg' alt='It is probally better you can not see this' height='100' width='100' class='center'>";
+        echo "<img src='./img/$images[$randomValue].jpeg' alt='It is probally better you can not see this' >";
     }
     
 ?>

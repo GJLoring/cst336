@@ -8,7 +8,7 @@
 
         ?>
         <style>
-            @import url("css/styles.css");
+            @import url("css/style.css");
         </style>
     </head>
     <body>
