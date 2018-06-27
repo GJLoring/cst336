@@ -27,7 +27,7 @@
         switch($randomValue){
             case 0: $a="McDonalds";
                 break;
-            case 1: $a="Wendy’s";
+            case 1: $a="Wendys";
                 break;
             case 2: $a="In and Out";
                 break;
@@ -131,9 +131,10 @@
     }
 
     function looksLike(){
-        $fries = description();
-        $shake = description();
-        echo "<H2>$fries Fries and the $shake Shake in town!</H2>";
+        $randomValue = rand(0,4);
+        $images = array("a","b","c","d");
+        $images[$randomValue];
+        echo "<img src='./img/$images[$randomValue].jpeg' alt='It is probally better you can not see this' height='100' width='100' class='center'>";
     }
     
 ?>

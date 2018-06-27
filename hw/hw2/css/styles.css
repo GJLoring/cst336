@@ -2,11 +2,12 @@
 
     img {
         border-radius:20px;
+        position:center;
     }
     
     body {
         background-color: black;
-        background-image:url("../img/wall.jpg");
+        background-image:url("../img/wall.png");
 
     }
     
