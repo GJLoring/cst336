@@ -6,3 +6,16 @@
 [25-Jun-2018 10:21:42 UTC] PHP Parse error:  syntax error, unexpected '{' in /home/ubuntu/workspace/cst336/labs/lab2/inc/functions.php on line 8
 [25-Jun-2018 10:21:42 UTC] PHP Stack trace:
 [25-Jun-2018 10:21:42 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/labs/lab2/index.php:0
+[03-Jul-2018 10:46:00 UTC] PHP Parse error:  syntax error, unexpected '}', expecting ',' or ';' in /home/ubuntu/workspace/cst336/labs/lab3/index.php on line 31
+[03-Jul-2018 10:48:07 UTC] PHP Parse error:  syntax error, unexpected '}', expecting ',' or ';' in /home/ubuntu/workspace/cst336/labs/lab3/index.php on line 31
+[03-Jul-2018 10:48:24 UTC] PHP Parse error:  syntax error, unexpected '}', expecting ',' or ';' in /home/ubuntu/workspace/cst336/labs/lab3/index.php on line 31
+[03-Jul-2018 10:50:15 UTC] PHP Parse error:  syntax error, unexpected ''<img src="'' (T_CONSTANT_ENCAPSED_STRING) in /home/ubuntu/workspace/cst336/labs/lab3/index.php on line 57
+[03-Jul-2018 10:52:28 UTC] PHP Warning:  include(api/pixelbayAPI.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/cst336/labs/lab3/index.php on line 6
+[03-Jul-2018 10:52:28 UTC] PHP Stack trace:
+[03-Jul-2018 10:52:28 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/labs/lab3/index.php:0
+[03-Jul-2018 10:52:28 UTC] PHP Warning:  include(): Failed opening 'api/pixelbayAPI.php' for inclusion (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/cst336/labs/lab3/index.php on line 6
+[03-Jul-2018 10:52:28 UTC] PHP Stack trace:
+[03-Jul-2018 10:52:28 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/labs/lab3/index.php:0
+[03-Jul-2018 10:52:28 UTC] PHP Fatal error:  Call to undefined function getImageURLs() in /home/ubuntu/workspace/cst336/labs/lab3/index.php on line 8
+[03-Jul-2018 10:52:28 UTC] PHP Stack trace:
+[03-Jul-2018 10:52:28 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/labs/lab3/index.php:0

@@ -26,24 +26,24 @@
     <body>
         <br>
         <?php
-            if(!isset($imageURLs)){
-                echo "<h2><Type a keyword to display a slide show of random images</h2>"
+            if(!isset($imageURLs)){ // form not submitted
+                echo "<h2><Type a keyword to display a slide show of random images</h2>";
             }else{
-                // ?? Fix me
-            }
+                // form submitted
+            
         ?>
         <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
-            
-        <ol class="carousel-indicators">
-            <?php
-                for($i = 0; $i <7; $i++){
-                    echo ">li data-target='#carousel-example-generic' data-slide-to='$i'";
-                    echo ($i==0)? "class='active'" : "";
-                    echo "></li>";
-                }
-            ?>
-        </ol>
-        
+            <!-- Indicators-->
+            <ol class="carousel-indicators">
+                <?php
+                    for($i = 0; $i <7; $i++){
+                        echo ">li data-target='#carousel-example-generic' data-slide-to='$i'";
+                        echo ($i==0)? "class='active'" : "";
+                        echo "></li>";
+                    }
+                ?>
+            </ol>
+        </div>
         <div class="carousel-inner" role="listbox">
             <?php
                 for($i = 0; $i < 7; $i++){
@@ -54,7 +54,7 @@
                     echo '<div class="item ';
                     echo ($i== 0)? "active" : "";
                     echo '">';
-                    echoi '<img src="' .$imageURLs[$randomIndex]. '" >';
+                    echo '<img src="' .$imageURLs[$randomIndex]. '" >';
                     echo '</div>';
                     unset($imageURLs[$randomIndex]);
                 }
