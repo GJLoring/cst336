@@ -5,8 +5,9 @@
     if(isset($_GET['keyword'])){
         include './api/pixabayAPI.php';
         $keyword = $_GET['keyword'];
-        $hORv = $_GET['layout'];
-        $imageURLs = getImageURLs($keyword, $hORv);
+        $layoutHV = $_GET['layout'];
+        echo $layoutHV;
+        $imageURLs = getImageURLs($keyword, $layoutHV);
         $backgroundImage = $imageURLs[array_rand($imageURLs)];
     }
 ?>
@@ -79,8 +80,8 @@
 
         <form>
             <input type="text" name="keyword" placeholder="keyword" value="<?=$_GET['keyword']?>"/>
-            <input type="radio" id="lhorizantal" name="layout" value="horizontal">
-            <label for="Horizantal"></label><label for="lhorizantal">Hortizantal</label>
+            <input type="radio" id="lhorizontal" name="layout" value="horizontal">
+            <label for="Horizontal"></label><label for="lhorizontal">Horizontal</label>
             <input type="radio" id="lvertical" name="layout" value="vertical">
             <label for="Vertical"></label><label for="lvertical">Vertical</label>
             <select name="category">
