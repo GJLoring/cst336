@@ -3,9 +3,10 @@
     $backgroundImage = "img/sea.jpg";
 
     if(isset($_GET['keyword'])){
-        include 'api/pixelbayAPI.php';
-        $keyword = $_GETY['keyword'];
-        $imageURLS = getImageURLs($keyword);
+        include './api/pixabayAPI.php';
+        $keyword = $_GET['keyword'];
+        $hORv = $_GET['layout'];
+        $imageURLs = getImageURLs($keyword, $hORv);
         $backgroundImage = $imageURLs[array_rand($imageURLs)];
     }
 ?>
@@ -13,7 +14,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Imge Carousel</title>
+        <title>Image Carousel</title>
         <meta charset="utf-8">
         <link href="https://maxcdn.bootstrap.cdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
         <style>
@@ -48,7 +49,7 @@
             <?php
                 for($i = 0; $i < 7; $i++){
                     do{
-                        $randomIndex = rand(0, cxount($imageURLs));
+                        $randomIndex = rand(0, count($imageURLs));
                     }while(!isset($imageURLs[$randomIndex]));
     
                     echo '<div class="item ';
@@ -92,7 +93,7 @@
             <input type="submit" value="Search" />
         </form>
 
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.37/js/bootstrap.min.js" integrity="sha384"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384"></script>
     </body>
 </html>
