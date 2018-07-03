@@ -38,7 +38,7 @@
             <ol class="carousel-indicators">
                 <?php
                     for($i = 0; $i <7; $i++){
-                        echo ">li data-target='#carousel-example-generic' data-slide-to='$i'";
+                        echo "<li data-target='#carousel-example-generic' data-slide-to='$i'";
                         echo ($i==0)? "class='active'" : "";
                         echo "></li>";
                     }
@@ -63,11 +63,11 @@
         </div>
 
         <!-- Controls -->
-        <a class="left carousel-control" href="#carosel-example-generic" roles="button" data-slide="prev">
+        <a class="left carousel-control" href="#carousel-example-generic" roles="button" data-slide="prev">
             <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
             <span class="sr-only">Previouse</span>
         </a>
-        <a class="right carousel-control" href="#carosel-example-generic" roles="button" data-slide="prev">
+        <a class="right carousel-control" href="#carousel-example-generic" roles="button" data-slide="next">
             <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
              <span class="sr-only">Next</span>
         </a>
@@ -79,7 +79,7 @@
 
         <form>
             <input type="text" name="keyword" placeholder="keyword" value="<?=$_GET['keyword']?>"/>
-            <input type="radio" id="lhorizantal" name="layout" value="horizantal">
+            <input type="radio" id="lhorizantal" name="layout" value="horizontal">
             <label for="Horizantal"></label><label for="lhorizantal">Hortizantal</label>
             <input type="radio" id="lvertical" name="layout" value="vertical">
             <label for="Vertical"></label><label for="lvertical">Vertical</label>
