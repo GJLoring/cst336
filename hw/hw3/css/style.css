@@ -1,0 +1,63 @@
+    @import url('https://fonts.googleapis.com/css?family=Indie+Flower');
+
+    img {
+        border-radius:20px;
+
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    body {
+        background-color: black;
+        background-image:url("../img/wall.png");
+        text-align:center;
+
+    }
+
+    #plate {
+        width:800px;
+        height:571px;
+        position:relative;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #name {
+        font-family: 'Indie Flower', cursive;
+        position:absolute;
+        top:20px;
+        left:20px;
+        margin-left: auto;
+        margin-right: auto;
+        text-align:center;
+        font-size:1.2em;
+    }
+    
+    #includes {
+        font-family: 'Indie Flower', cursive;
+        position:absolute;
+        bottom:20px;
+        left:20px;
+        margin-left: auto;
+        margin-right: auto;
+        text-align:center;
+        font-size:1.0em;
+        color:white;
+    }
+    
+    #display {
+       display: block;
+        top: 60px;
+        position:absolute;
+        width:125;
+        height: auto;
+    }
+    
+    footer{
+        font-family: "Times New Roman", Georgia, Serif;
+        font-size:1.2em;
+        width:600px;
+        margin:0 auto;
+        background-color: white;
+        padding-top:10px;
+    }
