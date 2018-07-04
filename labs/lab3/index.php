@@ -27,8 +27,9 @@
     <body>
         <br>
         <?php
-            if(!isset($imageURLs)){ // form not submitted due to missing type
-                echo "<h2><Must type a keyword to display a slide show of random images</h2>";
+            if(empty($_GET['keyword']) and !isset($_POST['category'])){ // form not submitted due to missing type
+            //if(!isset($imageURLs)){ // form not submitted due to missing type
+                echo "<h2>Must type a keyword to display a slide show of random images</h2>";
             }else{
                 // form submitted
         ?>
@@ -88,11 +89,11 @@
             <label for="Vertical"></label><label for="lvertical">Vertical</label>
             </br>
             <select name="category">
-                <option value ="">Select One</option>
+                <option value="">Select One</option>
                 <option value="ocean">Sea</option>
-                <option>Forest</option>
-                <option>Mountain</option>
-                <option>Snow</option>
+                <option value="forest">Forest</option>
+                <option value="mountain">Mountain</option>
+                <option value="snow">Snow</option>
             </select>
             </br>
             <input type="submit" value="Search" />
