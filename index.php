@@ -13,6 +13,8 @@ echo "Gabriel Loring's CST336 Internet Programming Page";
 <a href="labs/lab1/"> Lab 1</a>
 <a href="labs/lab2/"> Lab 2</a>
 <a href="labs/lab3/"> Lab 3</a>
+<a href="labs/lab4/"> Lab 4</a>
+<a href="labs/lab5/"> Lab 5</a>
 <br/>
 <h1> Homework </h1>
 <a href="hw/hw1/"> Homework 1</a>
