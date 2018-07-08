@@ -88,9 +88,9 @@
                 <br>
                 Form Element 3-5, Type Radio Buttons:
                 <br>
-                <input type="radio" name="radioButtons" id="XOROptionA" value="XOROptionA" <?php echo ($_SESSION['radioButtons'] == "XOROptionA") ? 'checked="checked"' : '';?> /><label for="XOROptionA"> "XOR Option A" </label><br />
-                <input type="radio" name="radioButtons" id="XOROptionB" value="XOROptionB" <?php echo ($_SESSION['radioButtons'] == "XOROptionB") ? 'checked="checked"' : '';?> /><label for="XOROptionB"> "XOR Option B (Check this one)"</label><br />
-                <input type="radio" name="radioButtons" id="XOROptionC" value="XOROptionC" <?php echo ($_SESSION['radioButtons'] == "XOROptionC") ? 'checked="checked"' : '';?> /><label for="XOROptionC"> "XOR Option C"</label><br />
+                <input type="radio" name="radioButtons" id="XOROptionA" value="XOROptionA" <?php echo ($_SESSION['radioButtons'] == "XOROptionA") ? 'checked="checked"' : '';?> /><label for="XOROptionA"> XOR Option A </label><br />
+                <input type="radio" name="radioButtons" id="XOROptionB" value="XOROptionB" <?php echo ($_SESSION['radioButtons'] == "XOROptionB") ? 'checked="checked"' : '';?> /><label for="XOROptionB"> XOR Option B (Check this one)</label><br />
+                <input type="radio" name="radioButtons" id="XOROptionC" value="XOROptionC" <?php echo ($_SESSION['radioButtons'] == "XOROptionC") ? 'checked="checked"' : '';?> /><label for="XOROptionC"> XOR Option C</label><br />
                 <br>
                 Form Element 6, Type Submit:<input type="submit" value="Validate" name="validatdeForm" />
 
