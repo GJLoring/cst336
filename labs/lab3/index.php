@@ -1,3 +1,8 @@
+<?php 
+   ini_set('display_errors', 'On');
+   error_reporting(E_ALL);
+ ?>
+ 
 <?php
     $backgroundImage = "img/sea.jpg";
     $layoutHV = "horizontal";   
@@ -8,6 +13,9 @@
         echo $layoutHV;
         $imageURLs = getImageURLs($keyword, $layoutHV);
         $backgroundImage = $imageURLs[array_rand($imageURLs)];
+        echo '<pre>';
+            var_dump($imageURLs); 
+        echo '</pre>';
     }
 ?>
 <!DOCTYPE html>
@@ -27,7 +35,11 @@
     <body>
         <br>
         <?php
-            if(empty($_GET['keyword']) and !isset($_POST['category'])){ // form not submitted due to missing type
+
+            printf("keyword:\t%s.\n",$_GET['keyword']);
+            printf("category:\t%s.\n",$_GET['category']);
+            printf("boolean:\t%s.",(empty($_GET['keyword']) and !isset($_POST['category'])));
+            if(empty($_GET['keyword']) and empty($_POST['category'])){ // form not submitted due to missing type
             //if(!isset($imageURLs)){ // form not submitted due to missing type
                 echo "<h2>Must type a keyword to display a slide show of random images</h2>";
             }else{
