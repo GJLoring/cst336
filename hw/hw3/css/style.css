@@ -9,29 +9,22 @@
     body {
         background-color: white;
         background-image:url("../img/wall.png");
-        text-align:center;
+        text-align:left;
 
     }
 
-    #introText {
-        font-family: 'Indie Flower', cursive;
-        position:absolute;
-        top:20px;
-        left:20px;
-        margin-left: auto;
-        margin-right: auto;
-        text-align:center;
-        font-size:1.2em;
+    h1 {
+        color: blue;
     }
     
-        #errorText {
+
+     #errorText {
         font-family: 'Indie Flower', cursive;
-        position:absolute;
         top:20px;
         left:20px;
         margin-left: auto;
         margin-right: auto;
-        text-align:center;
+        text-align:left;
         font-size:1.2em;
         color:red;
     }

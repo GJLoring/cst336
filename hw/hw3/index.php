@@ -61,7 +61,7 @@
 <html>
     <head>
         <title> PHP Form Demonstration Page </title>
-        <link href="css/styles.css" rel="stylesheet" type="text/css" />
+        <link href="css/style.css" rel="stylesheet" type="text/css" />
     </head>
     <body>
         <div id="introText">
