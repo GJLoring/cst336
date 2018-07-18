@@ -1045,3 +1045,40 @@ Stack trace:
 [08-Jul-2018 01:42:57 UTC] PHP Stack trace:
 [08-Jul-2018 01:42:57 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/labs/lab5/index.php:0
 [08-Jul-2018 01:42:57 UTC] PHP   2. displayCategories() /home/ubuntu/workspace/cst336/labs/lab5/index.php:94
+[18-Jul-2018 01:31:18 UTC] PHP Notice:  Undefined index: catId in /home/ubuntu/workspace/cst336/labs/lab6/index.php on line 72
+[18-Jul-2018 01:31:18 UTC] PHP Stack trace:
+[18-Jul-2018 01:31:18 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/labs/lab6/index.php:0
+[18-Jul-2018 01:31:18 UTC] PHP   2. displayCategories() /home/ubuntu/workspace/cst336/labs/lab6/index.php:96
+[18-Jul-2018 01:31:18 UTC] PHP Notice:  Undefined index: catId in /home/ubuntu/workspace/cst336/labs/lab6/index.php on line 72
+[18-Jul-2018 01:31:18 UTC] PHP Stack trace:
+[18-Jul-2018 01:31:18 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/labs/lab6/index.php:0
+[18-Jul-2018 01:31:18 UTC] PHP   2. displayCategories() /home/ubuntu/workspace/cst336/labs/lab6/index.php:96
+[18-Jul-2018 01:31:18 UTC] PHP Notice:  Undefined index: catId in /home/ubuntu/workspace/cst336/labs/lab6/index.php on line 72
+[18-Jul-2018 01:31:18 UTC] PHP Stack trace:
+[18-Jul-2018 01:31:18 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/labs/lab6/index.php:0
+[18-Jul-2018 01:31:18 UTC] PHP   2. displayCategories() /home/ubuntu/workspace/cst336/labs/lab6/index.php:96
+[18-Jul-2018 01:31:18 UTC] PHP Notice:  Undefined index: catId in /home/ubuntu/workspace/cst336/labs/lab6/index.php on line 72
+[18-Jul-2018 01:31:18 UTC] PHP Stack trace:
+[18-Jul-2018 01:31:18 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/labs/lab6/index.php:0
+[18-Jul-2018 01:31:18 UTC] PHP   2. displayCategories() /home/ubuntu/workspace/cst336/labs/lab6/index.php:96
+[18-Jul-2018 01:31:18 UTC] PHP Notice:  Undefined index: catId in /home/ubuntu/workspace/cst336/labs/lab6/index.php on line 72
+[18-Jul-2018 01:31:18 UTC] PHP Stack trace:
+[18-Jul-2018 01:31:18 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/labs/lab6/index.php:0
+[18-Jul-2018 01:31:18 UTC] PHP   2. displayCategories() /home/ubuntu/workspace/cst336/labs/lab6/index.php:96
+[18-Jul-2018 01:31:18 UTC] PHP Notice:  Undefined index: catId in /home/ubuntu/workspace/cst336/labs/lab6/index.php on line 72
+[18-Jul-2018 01:31:18 UTC] PHP Stack trace:
+[18-Jul-2018 01:31:18 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/labs/lab6/index.php:0
+[18-Jul-2018 01:31:18 UTC] PHP   2. displayCategories() /home/ubuntu/workspace/cst336/labs/lab6/index.php:96
+[18-Jul-2018 01:31:18 UTC] PHP Notice:  Undefined index: catId in /home/ubuntu/workspace/cst336/labs/lab6/index.php on line 72
+[18-Jul-2018 01:31:18 UTC] PHP Stack trace:
+[18-Jul-2018 01:31:18 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/labs/lab6/index.php:0
+[18-Jul-2018 01:31:18 UTC] PHP   2. displayCategories() /home/ubuntu/workspace/cst336/labs/lab6/index.php:96
+[18-Jul-2018 01:31:21 UTC] PHP Notice:  Use of undefined constant errorMessage - assumed 'errorMessage' in /home/ubuntu/workspace/cst336/labs/lab6/login.php on line 17
+[18-Jul-2018 01:31:21 UTC] PHP Stack trace:
+[18-Jul-2018 01:31:21 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/labs/lab6/login.php:0
+[18-Jul-2018 01:31:21 UTC] PHP Notice:  Undefined variable: errorMessage in /home/ubuntu/workspace/cst336/labs/lab6/login.php on line 18
+[18-Jul-2018 01:31:21 UTC] PHP Stack trace:
+[18-Jul-2018 01:31:21 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/labs/lab6/login.php:0
+[18-Jul-2018 01:31:21 UTC] PHP Notice:  Undefined index: incorrect in /home/ubuntu/workspace/cst336/labs/lab6/login.php on line 33
+[18-Jul-2018 01:31:21 UTC] PHP Stack trace:
+[18-Jul-2018 01:31:21 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/labs/lab6/login.php:0
