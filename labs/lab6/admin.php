@@ -1,9 +1,10 @@
 <?php
     ini_set('display_errors', 'On');
     error_reporting(E_ALL);
-    session__start();
+    session_start();
     if(!isset($_SESSION['adminName']))
     {
+     echo " 8. Debug message adminName not set:";
      header("Location:login.php");
     }
     include './dbConnection.php';
@@ -13,8 +14,7 @@
     //$statement = $conn->prepair($sql);
     //$statement->execute();
     //Fix/del these
-    header("Location: admin.php");
-
+    //header("Location: admin.php");
 
     function displayAllProducts(){
         global $conn;
@@ -63,7 +63,7 @@
                 echo "<td>" .$record['productName']."</td>";
                 echo "<td>" .$record['productDescription']. "</td>";
                 echo "<td>" .$record['price']. "</td>";
-                echo "<td><a class = 'btn btn-primary' href='updateProduct.php?productId=".$record['productID']."'>Update</a></td>";
+                echo "<td><a class = 'btn btn-primary' href='updateProduct.php?productId=".$record['productId']."'>Update</a></td>";
                 
                 echo "<form action='deleteProduct.php' onsubmission='return confirmDelete()'>";
                 echo "<input type='hidden' name='productID' value= ". $record['productId']."/>";

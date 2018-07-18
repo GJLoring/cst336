@@ -11,23 +11,18 @@
    <body>
       <div>
          <header>
-            <h1>Adm Login</h1>
+            <h1>Administrator Login</h1>
          </header>
-         <?php
-            if(errorMessage){
-            echo "<div>$errorMessage</div>";
-            }
-         ?>
+
          <div></div>
          <div>
             <form method="post" action="loginProcess.php">
                   Username: <input type="text" name="username" /> <br />
                   Password: <input type="password" name="password" /> <br />
-                  <input type="submit"  name="submitForm" value="Login"/>
+                  <input type="submit" class='btn btn-primary' name="submitForm" value="Login!" />
             </form>
          </div>
 
-         <input type="submit" class='btn btn-primary' name="submitForm" value="Login!" />
          <br /><br />
          <?php
          if($_SESSION['incorrect']){
