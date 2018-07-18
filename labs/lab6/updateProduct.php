@@ -68,11 +68,12 @@
         <link href="css/styles.css" rel="stylesheet" type="text/css" />
     </head>
     <body>
+    <h1> OtterMart Product Update </h1>
     <form>
-        <input type="hidden" name="productId" value="<?=product['productId']?>"/>
+        <input type="hidden" name="productId" value="<?=$product['productId']?>"/>
         <strong>Product Name</strong> <input = "text" class="form-control" value="<?=$product['productName']?>" name= "productName"><br>
         <strong>Description</strong><textarea name="description" class="form-control" cols=50 rows = 4>value="<?=$product['productDescription']?>" </textarea><br>
-        <strong>Price</strong><input type="text" class="form-control" name="price">value="<?=$product['price3']?>" <br>
+        <strong>Price</strong><input type="text" class="form-control" name="price">value="<?=$product['price']?>" <br>
         
         <strong>Catagory</strong><select name="catId" class="form-control">
             <option value="">Select One</option>
