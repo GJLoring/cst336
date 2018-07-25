@@ -38,6 +38,7 @@
         </script>
     </head>
     <body>
+        <h1> OtterMart Product Admin </h1>
         <form action="addProduct.php">
             <input type="submit" class = 'btn btn-secondary' id = "begining" name="addproduct" value="Add Product"/>
         </form>

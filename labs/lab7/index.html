@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Hangman</title>
+        <script language="javascript">
+            /*
+            var selectWord = "";
+            var selectHint = "";
+            var board = [];
+            var remainingGuesses = 6;
+            var words = ["snake", "monkey", "bettle"];
+            var alphabet = ['A', 'B', 'C', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z'];
+
+
+            // console.log(words[0]);
+            //
+            // var randomInt = Math.floor(Math.random() * words.length);
+            // selectWord =  words[randomInt];
+            // console.log(selectWord);
+
+            //Listeners
+            window.onload = startGame();
+
+            //Functions
+            function startGame(){
+                pickWord();
+                initBoard();
+                updateBoard();
+            }
+
+            function initBoard(){
+                for(var letter in selectWord){
+                    board.push(" _");
+                }
+            }
+
+            function pickWord(){
+                var randomInt = Math.floor(Math.random() * words.length);
+                selectedWord =  words[randomInt];
+            }
+
+            function updateWord(positions, letter){
+                for(var pos of positions){
+                    board[pos] = letter;
+                }
+                updateBoard();
+            }
+
+            function updateBoard(){
+                $("#word").empty();
+
+                for(var letter of board){
+                    document.getElementById("word").innerHTML += letter + " ";
+                }
+            }
+
+            function updateMan(){
+                $("handImg").attr("src", "img/stick_" + (6-remainingGuesses) + ".png");
+            }
+            function initBoard();
+            for(var letter of board){
+                document.getElementById("word").innerHTML += letter + " ";
+            }
+
+            //CREATE LETTERS IN LETTER DIV
+            function createLetters(){
+                for( var letter of alphabet){
+                    $("#letters"). append(",button class='letter' id='" + letter + "'>"+ letter + "</button>");
+
+                    //Goes here??
+                    $(".letter").click(function(){
+                        console.log($(this).attr("id"));
+                    })
+                }
+            }
+
+            function checkLetter(letter){
+                var positions = new Array();
+
+                for(var i = 0; i < selectedWord.length; i++){
+                    console.log(selectedWord);
+                    if(letter == selectedWord[i]){
+                        positions.push(i);
+                    }
+                }
+
+                if((positions.length > 0){
+                    updateWord(positions, letter);
+                }else{
+                    remainingGuesses -= 1;
+                }
+            }
+
+
+            $("#letterBtn").click(function(){
+                var boxVal = $("#letterBox").val();
+                console.log("You pressed the button and it had value: " + boxVal);
+            })
+            */
+        </script>
+        <link  href="css/styles.css" rel="stylesheet" type="text/css" />
+        <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
+        <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+    <body>
+        <div class='container text-center'>
+            <header>
+                <h1>Hangman</h1>
+                <h4>Javascript Edition</h4>
+            </header>
+
+            <div id="word"></div>
+            <div id="letters">
+                <input type = "text" id = "leeterBox">
+                <button id = "letterBtn">Submit</button>
+            </div>
+
+            <div id="man">
+                <img src="img/stick_0.png" class="manImg" id="hangImg">
+            </div>
+
+
+            <div id="won">
+                <h2>You Won!</h2>
+                <button class="replayBtn btn btn-success">Play Again</button>
+            </div>
+            <div id="lost">
+                <h2>You Lost!</h2>
+                <button class="replayBtn btn btn-warning">Play Again</button>
+            </div>
+
+        </div>
+
+    <!--<script src='js/hangman.js'></script>-->
+    <script src='js/hangman_revised.js'></script>
+    </body>
+</html>
