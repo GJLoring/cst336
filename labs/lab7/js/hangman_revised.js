@@ -30,6 +30,20 @@ $(".replayBtn").on("click", function() {
     location.reload();
 });
 
+$("#hintbtn").click(function(){
+    remainingGuesses-=1;
+    updateMan();
+     $("#hint").append("<span class='hint'>Hint: " + selectedHint + "</span>");
+    console.log("You pressed the hint button the hint is: " + selectedHint);
+})
+
+
+$("#letterBtn").click(function(){
+        //alert("Code hits");
+        $("#guesses").append($("#letterBox").val());
+        $("#guesses").append("</br>");
+});
+
 
 //FUNCTIONS
 
@@ -86,7 +100,7 @@ function updateBoard() {
     }
     
     $("#word").append("<br />");
-    $("#word").append("<span class='hint'>Hint: " + selectedHint + "</span>")
+    
 }
 
 
