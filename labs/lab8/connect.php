@@ -5,11 +5,17 @@ function getDBConnection() {
     //C9 db info
     $host = "localhost";
     $dbName = "csumb_quiz";
-    $username = getenv("C9_USER");
+    //$username = getenv("C9_USER");
+    $username = "root";
     $password = "";
     
     //when connecting from Heroku
     if  (strpos($_SERVER['HTTP_HOST'], 'herokuapp') !== false) {
+        
+        $host = "localhost";
+        $username = "b6ef724ec50a2b";
+        $password = "8db34bf9";
+            
         $url = parse_url(getenv("CLEARDB_DATABASE_URL"));
         $host = $url["host"];
         $dbName = substr($url["path"], 1);
