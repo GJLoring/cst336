@@ -1,8 +1,11 @@
+<?php 
+   ini_set('display_errors', 'On');
+   error_reporting(E_ALL);
+ ?>
+
 <?php
 session_start();
-$("#logoutBtn").click(function(){
-    window.location.href="logout.php";
-});
+
 
 function displayQuiz(){
     //displays Quiz if session is active
