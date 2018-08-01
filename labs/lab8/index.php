@@ -38,9 +38,9 @@ function displayQuiz(){
                 <h1>Quiz</h1>
                 <?=displayQuiz()?>
                 <div id="feedback">
-                    <h2>Your final score is <span id ="score"> score </span> </h2>
-                    You've tken this quiz <strong id="times"></strong> times. <br />
-                    Your average score was <strong id="average"></strong>
+                    <h2>Your final score is <span id ="score">score </span></h2>
+                    You've taken this quiz <strong id = "times"></strong>  time(s).<br/><br/>
+                    Your average score was <strong id ="average"></strong>
                 </div>
             </div>
             <div id="mascot">

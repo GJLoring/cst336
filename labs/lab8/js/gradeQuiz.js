@@ -67,7 +67,7 @@ $(document).ready(function(){
             dataType : "json",
             data : {"score" : score },
             success : function(data){
-                //console.log(data);
+                console.log(data);
                 $("#times").html(data.times);
                 $("#average").html(data.average);
                 $("#feedback").css("display", "block");
@@ -77,6 +77,7 @@ $(document).ready(function(){
             complete: function(data,status) { //optional, used for debugging purposes
                //alert(data);
                //alert(status);
+               console.log(data);
             }
         
         });//AJAX
