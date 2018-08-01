@@ -1,9 +1,10 @@
 $(document).ready(function(){
-
+    
     $("#logoutBtn").click( function() {
         window.location.href="logout.php";
         }
     );
+
 
     var score = 0;
     $("form").submit(function(event) {
@@ -13,9 +14,13 @@ $(document).ready(function(){
         //Get answers
         var answer1 = $("input[name='question1']").val().trim();
         var answer2 = $("input[name='question2']:checked").val();
+        var answer3 = $("input[name='question3']").val().trim();    
+        var answer4 = $("input[name='question4']").val().trim();  
 
         console.log(answer1);
         console.log(answer2);
+        console.log(answer3);
+        console.log(answer4);
 
         //Checks if answers are correct
         // Question 1
@@ -25,6 +30,7 @@ $(document).ready(function(){
             incorrectAnswer($("#question1-feedback"));
         }
         $("question1-feedback").append("The answer is <strong>1994</strong>");
+        
         // Question 2
         if(answer2 == "C"){
             correctAnswer($("#question2-feedback"));
@@ -33,6 +39,22 @@ $(document).ready(function(){
         }
         $("question2-feedback").append("The answer is <strong>Monte Rey</strong>");
 
+        // Question 3
+        if(answer3 == "1"){
+            correctAnswer($("#question3-feedback"));
+        }else{
+            incorrectAnswer($("#question3-feedback"));
+        }
+        $("question3-feedback").append("The answer is <strong>1</strong> hour");
+
+        // Question 4
+        if(answer3 == "2"){
+            correctAnswer($("#question4-feedback"));
+        }else{
+            incorrectAnswer($("#question4-feedback"));
+        }
+        $("question4-feedback").append("The answer is <strong>2</strong> years");
+
         //Displays quiz score
         $("#score").html(score);
         $("#waiting").html("<img src='img/loading.gif' alt='submitting data' />");
@@ -40,7 +62,7 @@ $(document).ready(function(){
 
         //Submits and stores score, retrieves average score
         $.ajax({
-            type : "post",
+            type : "POST",
             url  : "submitScores.php",
             dataType : "json",
             data : {"score" : score },
@@ -55,7 +77,7 @@ $(document).ready(function(){
             complete: function(data,status) { //optional, used for debugging purposes
                // alert(status);
             }
-
+        
         });//AJAX
 
     }); //formSubmit

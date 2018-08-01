@@ -5,6 +5,7 @@ include 'connect.php';
 $connect = getDBConnection();
 
 $score = $_GET['score'];
+$score = $_POST['score'];
 echo $score;
 
 //Adding new score to database

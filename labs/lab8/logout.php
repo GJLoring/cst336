@@ -1,7 +1,5 @@
 <?php
-
-$("#logoutBtn").click(function(){
-    window.location.href="logout.php";
-});
-
+$session_start();
+$session_destroy();
+header("Location: login.php");
 ?>
