@@ -20,5 +20,7 @@ echo "Gabriel Loring's CST336 Internet Programming Page";
 <a href="hw/hw1/"> Homework 1</a>
 <a href="hw/hw2/"> Homework 2</a>
 <a href="hw/hw3/"> Homework 3</a>
+</br>
+<a href="cst336_group_final/index.php"> Final Project</a>
 </body>
 </html>
